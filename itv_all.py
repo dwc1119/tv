@@ -13,7 +13,7 @@ eventlet.monkey_patch()
 urls = [
     #"https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iSGViZWki",  # Hebei (河北)
     #"https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iYmVpamluZyI%3D",  # Beijing (北京)
-    "https://fofa.info/result?qbase64=5LqS6IGU572R55S16KeG566h55CG57O757uf",   # heilongjiang (黑龙江)
+    "https://fofa.info/result?qbase64=5LqS6IGU572R55S16KeG566h55CG57O757uf",  # heilongjiang (黑龙江)
     ]
 
 def modify_urls(url):
