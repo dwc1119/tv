@@ -136,6 +136,7 @@ for url in urls:
                             name = name.replace("央视", "CCTV")
                             name = name.replace("高清", "")
                             name = name.replace("超高", "")
+                            name = name.replace("K1", "")
                             name = name.replace("HD", "")
                             name = name.replace("标清", "")
                             name = name.replace("频道", "")
