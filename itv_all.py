@@ -11,8 +11,8 @@ import eventlet
 eventlet.monkey_patch()
 
 urls = [
-   #"https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iSGViZWki",  # Hebei (河北)
-    #"https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iYmVpamluZyI%3D",  # Beijing (北京)
+    "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iSGViZWki",  # Hebei (河北)
+    "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iYmVpamluZyI%3D",  # Beijing (北京)
     "https://fofa.info/result?qbase64=MjIyLjIxOC4xNTkuMTAwOjgxODEv",  # heilongjiang (黑龙江)
     ]
 
@@ -141,7 +141,7 @@ for url in urls:
                             name = name.replace("W", "")
                             name = name.replace("B1", "") 
                             name = name.replace("B2", "") 
-                            name = name.replace("音乐", "") 
+                            name = name.replace("CCTV15音乐", "CCTV15") 
                             name = name.replace("CCTV音乐", "CCTV15") 
                             name = name.replace("奥运", "") 
                             name = name.replace("国防", "") 
@@ -150,6 +150,8 @@ for url in urls:
                             name = name.replace("B6", "") 
                             name = name.replace("B5", "") 
                             name = name.replace("B9", "") 
+                            name = name.replace("上海卫视", "东方卫视") 
+                            name = name.replace("付费", "") 
                             name = name.replace("B12", "") 
                             name = name.replace("B14", "") 
                             name = name.replace("HD", "")
