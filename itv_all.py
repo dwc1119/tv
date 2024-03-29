@@ -228,8 +228,8 @@ def worker():
             ts_lists_0 = ts_lists[0].rstrip(ts_lists[0].split('.ts')[-1])  # m3u8链接前缀
             ts_url = channel_url_t + ts_lists[0]  # 拼接单个视频片段下载链接
 
-            # 多获取的视频数据进行3秒钟限制
-            with eventlet.Timeout(3, False):
+            # 多获取的视频数据进行5秒钟限制
+            with eventlet.Timeout(5, False):
                 start_time = time.time()
                 content = requests.get(ts_url, timeout = 1).content
                 end_time = time.time()
