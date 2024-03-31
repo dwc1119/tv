@@ -59,7 +59,7 @@ for url in urls:
     # 获取网页内容
     page_content = driver.page_source
 
-    # 关闭WebDriver
+    # 关1闭WebDriver
     driver.quit()
 
     # 查找所有符合指定格式的网址
