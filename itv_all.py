@@ -15,7 +15,7 @@ urls = [
     #"https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iYmVpamluZyI%3D",  # Beijing (北京)
     "https://fofa.info/result?qbase64=IjIyMi4yMTguMTU5Ig%3D%3D",  #nanning (南宁)
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iSHVuYW4i",  #hunan (湖南)
-    "https://fofa.info/result?qbase64=SVBUVue7vOWQiOeuoeeQhuezu%2Be7nw%3D%3D"
+    "https://fofa.info/result?qbase64=MTEwLjUyLjk5LjEwOQ%3D%3D"
     ]
 def modify_urls(url):
     modified_urls = []
