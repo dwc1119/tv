@@ -1,4 +1,4 @@
-# 自动获取酒店源 copy and modify https://github.com/ssili126/tv #
+# 自动获取酒店源 copy and modify https://github.com/ssili126/tv #淘特别感谢
 
 使用方法：
 
