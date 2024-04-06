@@ -18,6 +18,7 @@ urls = [
     "https://fofa.info/result?qbase64=MTEwLjUyLjk5LjEwOQ%3D%3D",
     "https://fofa.info/result?qbase64=MjIyLjIxOC4xNTg%3D",
     "https://fofa.info/result?qbase64=NDIuNTIuMzkuOTM%3D",
+    "https://fofa.info/result?qbase64=IjExMC41Mi45OSI%3D",
     "https://fofa.info/result?qbase64=IjIyMi4yMTgg",#（nanning）
     "https://fofa.info/result?qbase64=MTEwLjUyLjk5LjEwOQ%3D%3D"
     ]
