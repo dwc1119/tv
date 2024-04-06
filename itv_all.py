@@ -17,6 +17,7 @@ urls = [
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iSHVuYW4i",  #hunan (湖南)
     "https://fofa.info/result?qbase64=MTEwLjUyLjk5LjEwOQ%3D%3D",
     "https://fofa.info/result?qbase64=MjIyLjIxOC4xNTg%3D",
+    "https://fofa.info/result?qbase64=NDIuNTIuMzkuOTM%3D",
     "https://fofa.info/result?qbase64=MTEwLjUyLjk5LjEwOQ%3D%3D"
     ]
 def modify_urls(url):
