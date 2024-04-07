@@ -195,7 +195,7 @@ results = []
 error_channels = []
 
 
-# 定义工作线程函数
+# 定义工作线程函数1
 def worker():
     while True:
         # 从队列中获取一个任务
