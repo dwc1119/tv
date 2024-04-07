@@ -187,6 +187,7 @@ for result in results:
     if result:
         channel_name, channel_url = result.split(',')
         channels.append((channel_name, channel_url))
+        print ((channel_name, channel_url))
 
 # 线程安全的队列，用于存储下载任务
 task_queue = Queue()
