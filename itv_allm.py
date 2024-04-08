@@ -173,13 +173,10 @@ for url in urls:
         continue
 
 channels = []
-
 for result in results:
     line = result.strip()
     if result:
-        channel_name = name
-        channel_url = urld
-        
+        channel_name, channel_url = result.split(',')
         channels.append((channel_name, channel_url))
         
         
