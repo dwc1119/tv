@@ -212,6 +212,7 @@ for result in results:
     if result:
         channel_name, channel_url = result.split(',')
         channels.append((channel_name, channel_url))
+        print (channels)
 
 # 线程安全的队列，用于存储下载任务
 task_queue = Queue()
@@ -295,7 +296,7 @@ results.sort(key=lambda x: channel_key(x[0]))
 
 result_counter = 3  # 每个频道需要的个数
 
-with open("itvlist.txt", 'w', encoding='utf-8') as file:
+with open("itv.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     file.write('央视频道,#genre#\n')
     for result in results:
