@@ -118,7 +118,7 @@ for url in urls:
                                 urld = (f"{urls[0]}//{url_data[2]}/{urls[3]}")
                             else:
                                 urld = (f"{urls[0]}//{url_data[2]}")
-                            print(f"{name},{urld}")
+                            #print(f"{name},{urld}")
                             if name and urld:
                                 # 删除特定文字
                                 name = name.replace("cctv", "CCTV")
@@ -180,7 +180,7 @@ for result in results:
         channels.append((channel_name, channel_url))
         
         
-        print (channels)
+        #print (channels)
 
 # 线程安全的队列，用于存储下载任务
 task_queue = Queue()
