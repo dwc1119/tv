@@ -185,7 +185,7 @@ channels = []
 for result in results:
     line = result.strip()
     if result:
-        channe_nlame, channel_url = (name,urld)
+        channe_name, channel_url = (name,urld)
         channels.append(channel_name, channel_url)
         print (channel_name, channel_url)
 
