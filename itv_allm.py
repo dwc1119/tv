@@ -180,5 +180,6 @@ for result in results:
         channel_name, channel_url = (name,urld)
         channels.append((channel_name, channel_url))
         
-        print (channel_name, channel_url)
+        print (channels)
+        
 
