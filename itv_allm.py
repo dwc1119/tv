@@ -9,7 +9,7 @@ import threading
 from queue import Queue
 ###urls城市根据自己处地理位置修改
 urls = [
-    #"https://fofa.info/result?qbase64=572R57ucVFbnrqHnkIbns7vnu58%3D",
+    "https://fofa.info/result?qbase64=572R57ucVFbnrqHnkIbns7vnu58%3D",
     "https://fofa.info/result?qbase64=Iue9kee7nFRW566h55CG57O757ufIg%3D%3D"
 ]
 
