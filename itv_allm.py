@@ -43,7 +43,7 @@ results = []
 
 for url in urls:
     try:
-        # 创建一个Chrome WebDriver实例
+        # 创建个Chrome WebDriver实例
         chrome_options = Options()
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
