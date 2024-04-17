@@ -1,3 +1,15 @@
+import time
+import os
+import concurrent.futures
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import requests
+import re
+import threading
+from queue import Queue
+import eventlet
+eventlet.monkey_patch()
+
 # 线程安全的队列，用于存储下载任务
 task_queue = Queue()
 
@@ -13,8 +25,7 @@ with open("itv.txt", 'r', encoding='utf-8') as file:
         line = line.strip()
         if line:
             channel_name, channel_url = line.split(',')
-            if 'CCTV' in channel_name:
-                channels.append((channel_name, channel_url))
+            channels.append((channel_name, channel_url))
 
 # 定义工作线程函数
 def worker():
