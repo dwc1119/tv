@@ -14,6 +14,8 @@ eventlet.monkey_patch()
 urls = [
     "https://fofa.info/result?qbase64=572R57ucVFbnrqHnkIbns7vnu58%3D",
     "http://tonkiang.us/",
+    "https://fofa.info/result?qbase64=IuWbuuWuiee7tOS5n%2Be6syI%3D",
+    "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iaGViZWki",
     "https://fofa.info/result?qbase64=IuS6v%2BmUi%2BeOi%2BWdpCI%3D",
     "https://fofa.info/result?qbase64=Iue9kee7nFRW566h55CG57O757ufIg%3D%3D"
 ]
