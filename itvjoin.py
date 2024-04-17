@@ -1,4 +1,5 @@
 import time
+import datetime
 import os
 import concurrent.futures
 from selenium import webdriver
@@ -100,8 +101,8 @@ results.sort(key=lambda x: (x[0], -float(x[2].split()[0])))
 results.sort(key=lambda x: channel_key(x[0]))
 now_today = datetime.date.today()
 
-result_counter = 8  # 每个频道需要的个数
-with open("itv.txt", 'w', encoding='utf-8') as file:
+result_counter = 3  # 每个频道需要的个数
+with open("itvlist.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     file.write('央视频道,#genre#\n')
     for result in results:
