@@ -23,11 +23,11 @@ jobs:
       - name: Install dependencies
         run: pip install selenium requests futures eventlet
 
-      #- name: Run itv_all
-        #run: python ${{ github.workspace }}/itv_all.py
+      - name: Run itv1
+        run: python ${{ github.workspace }}/itv1.py
 
-      - name: itv_allm
-        run: python ${{ github.workspace }}/itv_allm.py
+      - name: run itv2
+        run: python ${{ github.workspace }}/itv2.py
         
       #- name: Run weishi
         #run: python ${{ github.workspace }}/weishi.py
