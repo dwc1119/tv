@@ -141,6 +141,7 @@ for url in urls:
                             name = name.replace("卡", "")
                             name = name.replace("回放", "")
                             name = name.replace("K1", "")
+                            name = name.replace("+", "")
                             name = name.replace("K2", "")
                             name = name.replace("W", "")
                             name = name.replace("B1", "") 
