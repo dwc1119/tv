@@ -14,6 +14,7 @@ eventlet.monkey_patch()
 urls = [
     "https://fofa.info/result?qbase64=572R57ucVFbnrqHnkIbns7vnu58%3D",
     "http://tonkiang.us/",
+    "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5bm%2F5LicIg%3D%3D",#广东
     "https://fofa.info/result?qbase64=IuWbuuWuiee7tOS5n%2Be6syI%3D",
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iaGViZWki",
     "https://fofa.info/result?qbase64=IuS6v%2BmUi%2BeOi%2BWdpCI%3D",
