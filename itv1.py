@@ -132,7 +132,7 @@ for url in urls:
                                 name = name.replace("cctv", "CCTV")
                                 
                                 name = name.replace("中央", "CCTV")
-                                name = name.replace("河北影视", "廊坊新闻")
+                                name = name.replace("河北影视", "河北影视剧")
                                 name = name.replace("w", "")
                                 name = name.replace("高清", "")
                                 name = name.replace("超高", "")
