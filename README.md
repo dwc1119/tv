@@ -1,4 +1,5 @@
 # 自动获取酒店源 copy and modify https://github.com/ssili126/tv #特别感谢
+注:本项目不支持fork，如需fork请到原作者主页
 
 使用方法：
 
