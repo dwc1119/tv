@@ -19,7 +19,7 @@
       1.3 首先运行itv.exe，完成后再运行itvtest.exe，
       1.4 运行完成后在当前目录下生成电视直播文件itvlist.txt。
   
-  有安装python的电脑：
+  安装python的电脑：
   
       2.1 电脑安装chrome，下载对应版本的chromedriver
       2.2 下载itv.py cctv.py weishi.py qita.py
