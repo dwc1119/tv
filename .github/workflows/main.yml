@@ -3,8 +3,8 @@ name: itvlist
 on:
   schedule:
     - cron: '0 4,10,22 * * *'
-  #push:
-    #branches:
+  push:
+    branches:
       - main
 
 jobs:
