@@ -28,12 +28,13 @@ jobs:
 
       - name: run itv2
         run: python ${{ github.workspace }}/itv2.py
-        
+
+      - name: Run itv_add
+        run: python ${{ github.workspace }}/itv_add.py        
+      
       - name: Run itvjoin
         run: python ${{ github.workspace }}/itvjoin.py
         
-      #- name: Run qita
-        #run: python ${{ github.workspace }}/qita.py
         
       - name: 提交更改
         run: |
