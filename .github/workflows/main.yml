@@ -2,10 +2,10 @@ name: itvlist
 
 on:
   schedule:
-    - cron: '0 4,10,22 * * *'
-  push:
-    branches:
-      - main
+    - cron: '0 22 * * *'
+  #push:
+    #branches:
+      #- main
 
 jobs:
   build:
@@ -23,6 +23,9 @@ jobs:
       - name: Install dependencies
         run: pip install selenium requests futures eventlet
 
+      - name: Run a
+        run: python ${{ github.workspace }}/a.py
+     
       - name: Run itv1
         run: python ${{ github.workspace }}/itv1.py
 
@@ -34,6 +37,13 @@ jobs:
       
       - name: Run itvjoin
         run: python ${{ github.workspace }}/itvjoin.py
+
+
+      - name: Run b
+        run: python ${{ github.workspace }}/b.py
+
+      - name: Run c
+        run: python ${{ github.workspace }}/c.py        
         
         
       - name: 提交更改
