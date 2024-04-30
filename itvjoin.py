@@ -102,9 +102,9 @@ results.sort(key=lambda x: channel_key(x[0]))
 now_today = datetime.date.today()
 
 result_counter = 3  # 每个频道需要的个数
-with open("itvlist.txt", 'w', encoding='utf-8') as file:
+with open("itvlist.txt", 'a', encoding='utf-8') as file:
     channel_counters = {}
-    file.write('央视频道,#genre#\n')
+    file.write('央视（城通）,#genre#\n')
     for result in results:
         channel_name, channel_url, speed = result
         if 'CCTV' in channel_name:
@@ -117,7 +117,7 @@ with open("itvlist.txt", 'w', encoding='utf-8') as file:
             else:
                 file.write(f"{channel_name},{channel_url}\n")
                 channel_counters[channel_name] = 1
-    file.write('数字频道,#genre#\n')
+    file.write('数字（城通）,#genre#\n')
     for result in results:
         channel_name, channel_url, speed = result
         if '天元' in channel_name or '风云' in channel_name or '球' in channel_name or '影' in channel_name:
@@ -131,7 +131,7 @@ with open("itvlist.txt", 'w', encoding='utf-8') as file:
                 file.write(f"{channel_name},{channel_url}\n")
                 channel_counters[channel_name] = 1
     channel_counters = {}
-    file.write('卫视频道,#genre#\n')
+    file.write('卫视（城通）,#genre#\n')
     for result in results:
         channel_name, channel_url, speed = result
         if '卫视' in channel_name:
@@ -145,7 +145,7 @@ with open("itvlist.txt", 'w', encoding='utf-8') as file:
                 file.write(f"{channel_name},{channel_url}\n")
                 channel_counters[channel_name] = 1
     channel_counters = {}
-    file.write('其他频道,#genre#\n')
+    file.write('其他（城通）,#genre#\n')
     for result in results:
         channel_name, channel_url, speed = result
         if 'CCTV' not in channel_name and '卫视' not in channel_name and '测试' not in channel_name:
