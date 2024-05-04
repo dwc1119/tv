@@ -2,7 +2,7 @@ name: itvlist
 
 on:
   schedule:
-    - cron: '0 4,10,22 * * *'
+    - cron: '0 23 * * *'
   push:
     branches:
       - main
@@ -29,8 +29,8 @@ jobs:
       - name: Run itv1
         run: python ${{ github.workspace }}/itv1.py
 
-      - name: run itv2
-        run: python ${{ github.workspace }}/itv2.py
+     # - name: run itv2
+       # run: python ${{ github.workspace }}/itv2.py
 
       - name: Run itv_add
         run: python ${{ github.workspace }}/itv_add.py        
