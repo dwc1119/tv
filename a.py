@@ -13,9 +13,9 @@ eventlet.monkey_patch()
 ###urls城市根据自己所处的地理位置修改
 urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9cWluaHVhbmdkYW8%3D",#秦皇岛
-    #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9InRhbmdzaGFuIg%3D%3D",#唐山
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9InRhbmdzaGFuIg%3D%3D",#唐山
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0iaGViZWki",#河北
-    #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9cWluaHVhbmdkYW8%3D",#秦皇岛
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImxhbmdmYW5nIg%3D%3D",#廊坊
     #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0iaGViZWki"#河北
 ]
 
@@ -134,7 +134,7 @@ with open("iptv.txt", 'r', encoding='utf-8') as file:
                 channels.append(channel)
 
 
-result_counter = 3  # 每个频道需要的个数
+result_counter = 8  # 每个频道需要的个数
 with open("itvlist.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     file.write('央视(电信),#genre#\n')
