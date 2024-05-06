@@ -13,7 +13,7 @@ eventlet.monkey_patch()
 ###urls城市根据自己所处的地理位置修改
 urls = [
     "https://fofa.info/result?qbase64=572R57ucVFbnrqHnkIbns7vnu58%3D",
-    "http://tonkiang.us/",
+    "https://fofa.info/result?qbase64=5LqS6IGU572R55S16KeG566h55CG57O757uf",
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0i5bm%2F5LicIg%3D%3D",#广东
     "https://fofa.info/result?qbase64=IuWbuuWuiee7tOS5n%2Be6syI%3D",
     "https://fofa.info/result?qbase64=ImlwdHYvbGl2ZS96aF9jbi5qcyIgJiYgY291bnRyeT0iQ04iICYmIHJlZ2lvbj0iaGViZWki",
