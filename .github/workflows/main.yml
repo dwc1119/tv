@@ -1,11 +1,11 @@
 name: itvlist
 
-#on:
- # schedule:
-    #- cron: '0 1 * * *'
-  #push:
-   # branches:
-     # - main
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -26,8 +26,8 @@ jobs:
       - name: Run a
         run: python ${{ github.workspace }}/a.py
      
-      - name: Run itv1
-        run: python ${{ github.workspace }}/itv1.py
+      - name: Run d
+        run: python ${{ github.workspace }}/d.py
 
      # - name: run itv2
        # run: python ${{ github.workspace }}/itv2.py
