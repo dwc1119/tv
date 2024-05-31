@@ -105,7 +105,26 @@ for url in urls:
         
         for url in valid_urls:
             print(f"可用url:{url}")
-            try:
+            # 创建一个Chrome WebDriver实例
+            chrome_options = Options()
+            chrome_options.add_argument('--headless')
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.add_argument('--disable-dev-shm-usage')
+        
+            driver = webdriver.Chrome(options=chrome_options)
+            # 使用WebDriver访问网页
+            driver.get(url)  # 将网址替换为你要访问的网页地址
+            time.sleep(10)
+            # 获取网页内容
+            page_content = driver.page_source
+        
+            # 关闭WebDriver
+            driver.quit()
+        
+            # 查找所有符合指定格式的网址
+            #if "<td>1</td>" or "<td>2</td>" or "<td>3</td>" or "<td>4</td>"  or "<td>5</td>" or "<td>6</td>" or "<td>7</td>" or "<td>8</td>" in page_content:
+            if "0.0" in page_content and "6666" not in page_content and "4000" not in page_content and "5673" not in page_content:
+                print(url)
                 udpxy_urls = []# 修改文件转发地址
                 ip_start_index = url.find("//") + 2
                 ip_dot_start = url.find(".") + 1
@@ -115,9 +134,7 @@ for url in urls:
                 url_x = f"{base_url}{ip_address}"
                 udpxy_url = f"{url_x}"
                 results.append(udpxy_url)
-                
-            except:
-                continue      
+            
     except:
         continue
 channels = []
