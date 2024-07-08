@@ -123,7 +123,7 @@ for url in urls:
         
             # 查找所有符合指定格式的网址
             #if "<td>1</td>" or "<td>2</td>" or "<td>3</td>" or "<td>4</td>"  or "<td>5</td>" or "<td>6</td>" or "<td>7</td>" or "<td>8</td>" in page_content:
-            if "0.0" in page_content and "1024" not in page_content and "4000" not in page_content and "192.168" not in page_content:
+            if "0.0" in page_content and "1024" not in page_content and "4000" not in page_content:
                 print(url)
                 udpxy_urls = []# 修改文件转发地址
                 ip_start_index = url.find("//") + 2
