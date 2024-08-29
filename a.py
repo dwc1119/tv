@@ -7,8 +7,6 @@ import requests
 import re
 import threading
 from queue import Queue
-import eventlet
-eventlet.monkey_patch()
 
 ###urls城市根据自己所处的地理位置修改
 urls = [
