@@ -1,6 +1,6 @@
 name: itvlist
 
-#on:
+on:
   schedule:
     - cron: '0 4,10,22 * * *'
   push:
@@ -10,19 +10,37 @@ name: itvlist
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-    
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: 3.x
+          node-version: '20'
+          
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 2
+          keep_minimum_runs: 6 
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.8  # 指定Python版本为3.8
+
+      - name: Install setuptools
+        run: |
+          pip install --upgrade pip  # 升级pip
+          pip install setuptools    # 安装setuptools
 
       - name: Install dependencies
-        run: pip install selenium requests futures eventlet
-
+        run: |
+          pip install opencv-python  # 根据需要安装opencv-python
+          pip install requests      # 安装requests库
       - name: Run a
         run: python ${{ github.workspace }}/a.py
      
