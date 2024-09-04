@@ -74,17 +74,18 @@ for url in urls:
         
         
 channels = []
-with open("iptv3.txt", 'r', encoding='utf-8') as file:
+with open("iptv.txt", 'r', encoding='utf-8') as file:
     lines = file.readlines()
     for line in lines:
         #print(line)
         line = line.strip()
         if line:
             channel_name,channel_url = line.split(",")
-            for udpxy_url in results:
+            for valid_ip in valid_ips:
                 #print(udpxy_url)
-                channel = f"{channel_name},{udpxy_url}/{channel_url}"
+                channel = f"{channel_name},http://{valid_ip}/{channel_url}"
                 channels.append(channel)
+
 
 
 result_counter = 16  # 每个频道需要的个数
