@@ -5,10 +5,10 @@ import cv2  # 导入OpenCV库
 
 ###urls城市根据自己所处的地理位置修改
 urls = [
-    #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9cWluaHVhbmdkYW8%3D",
-    #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9ImhhbmRhbiI%3D",#邯郸联通
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9cWluaHVhbmdkYW8%3D",#秦皇岛
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9InNoaWppYXpodWFuZyI%3D",#石家庄联通
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9InRhbmdzaGFuIg%3D%3D",#唐山联通
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIHJlZ2lvbj0iSGViZWki",#河北联通
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9IkNhbmd6aG91Ig%3D%3D",#沧州联通
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9ImhhbmRhbiI%3D"#邯郸联通
 ]
 def extract_unique_ip_ports(url):
@@ -83,7 +83,7 @@ with open("iptv2.txt", 'r', encoding='utf-8') as file:
         line = line.strip()
         if line:
             channel_name,channel_url = line.split(",")
-            for udpxy_url in results:
+            for udpxy_url in valid_ips:
                 #print(udpxy_url)
                 channel_udpxy_url = f"{udpxy_url}/{channel_url}"
                 channel = f"{channel_name},{channel_udpxy_url}"
