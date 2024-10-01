@@ -9,6 +9,7 @@ urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9InNoaWppYXpodWFuZyI%3D",#石家庄联通
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9InRhbmdzaGFuIg%3D%3D",#唐山联通
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9IkNhbmd6aG91Ig%3D%3D",#沧州联通
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9ImJhb2Rpbmci",#保定联通
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQ4MzciICYmIGNpdHk9ImhhbmRhbiI%3D"#邯郸联通
 ]
 def extract_unique_ip_ports(url):
