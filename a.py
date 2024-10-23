@@ -28,8 +28,7 @@ def extract_unique_ip_ports(url):
          
         if unique_ips_ports:
             return unique_ips_ports
-        else:
-            None
+        
 
     except requests.RequestException as e:
         print(f"请求错误: {e}")
@@ -72,7 +71,7 @@ for url in urls:
     if ip_ports:
         print("IP地址和端口号：")
     else:
-        continue
+        return None
     #测试每个IP地址和端口号，直到找到一个可访问的视频流
     
     for ip_port in ip_ports:
