@@ -71,7 +71,7 @@ for url in urls:
     if ip_ports:
         print("IP地址和端口号：")
     else:
-        return None
+        continue
     #测试每个IP地址和端口号，直到找到一个可访问的视频流
     
     for ip_port in ip_ports:
