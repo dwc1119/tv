@@ -67,7 +67,7 @@ ip_ports = []
 valid_ips = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
-    if ip_ports:
+    if ip_ports is not None:
         print("IP地址和端口号：")
     #测试每个IP地址和端口号，直到找到一个可访问的视频流
     
