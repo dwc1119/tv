@@ -8,8 +8,7 @@ urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImNoZW5nZHUi",#成都电信
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9Imxlc2hhbiI%3D",#乐山电信
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0i5Zub5bedIg%3D%3D"#四川电信
-   # "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9cWluaHVhbmdkYW8%3D",#秦皇岛
-    #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0iaGViZWki"#河北
+   
 ]
 
 def extract_unique_ip_ports(url):
@@ -64,10 +63,7 @@ for url in urls:
     ip_ports = extract_unique_ip_ports(url)
     if ip_ports:
         print("IP地址和端口号：")
-        
-    
-        
-    #测试每个IP地址和端口号，直到找到一个可访问的视频流
+        #测试每个IP地址和端口号，直到找到一个可访问的视频流
         for ip_port in ip_ports:
             valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
             if valid_ip:
