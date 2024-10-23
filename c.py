@@ -7,6 +7,7 @@ import cv2  # 导入OpenCV库
 urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImNoZW5nZHUi",#成都电信
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9Imxlc2hhbiI%3D",#乐山电信
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImxhbmdmYW5nIg%3D%3D",
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0i5Zub5bedIg%3D%3D"#四川电信
    
 ]
