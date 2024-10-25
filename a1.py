@@ -25,11 +25,7 @@ def extract_unique_ip_ports(url):
         # 使用正则表达式匹配IP地址和端口号
         ips_ports = re.findall(r'(\d+\.\d+\.\d+\.\d+:\d+)', html_content)
         unique_ips_ports = list(set(ips_ports))  # 去除重复的IP地址和端口号
-         
-        if unique_ips_ports:
-            return unique_ips_ports
-        
-
+        return unique_ips_ports  
     except requests.RequestException as e:
         print(f"请求错误: {e}")
         return None
@@ -71,9 +67,7 @@ for url in urls:
     if ip_ports:
         print("IP地址和端口号：")
     #测试每个IP地址和端口号，直到找到一个可访问的视频流
-    
         for ip_port in ip_ports:
-        
             valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
             if valid_ip:
                 print(f"找到可访问的视频流服务: {valid_ip}")
