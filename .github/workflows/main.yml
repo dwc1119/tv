@@ -41,8 +41,8 @@ jobs:
         run: |
           pip install opencv-python  # 根据需要安装opencv-python
           pip install requests      # 安装requests库
-      - name: Run a
-        run: python ${{ github.workspace }}/a.py
+      - name: Run a1
+        run: python ${{ github.workspace }}/a1.py
      
       #- name: Run d
         #run: python ${{ github.workspace }}/d.py
@@ -60,8 +60,8 @@ jobs:
      # - name: Run b
       #  run: python ${{ github.workspace }}/b.py
 
-      - name: Run c
-        run: python ${{ github.workspace }}/c.py        
+      - name: Run c1
+        run: python ${{ github.workspace }}/c1.py        
         
         
       - name: 提交更改
