@@ -21,8 +21,8 @@ def extract_unique_ip_ports(url):
         ips_ports = re.findall(r'(\d+\.\d+\.\d+\.\d+:\d+)', html_content)
         unique_ips_ports = list(set(ips_ports))  # 去除重复的IP地址和端口号
          
-        #if unique_ips_ports:
-        return unique_ips_ports
+        if unique_ips_ports:
+            return unique_ips_ports
 
     except requests.RequestException as e:
         print(f"请求错误: {e}")
