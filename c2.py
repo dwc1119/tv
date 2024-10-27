@@ -75,10 +75,11 @@ for url in urls:
            # print(f"找到可访问的视频流服务: {valid_ip}")
                 #valid_ips.append(valid_ip)
              #   file.write(f"{valid_ip}\n")
-            
+for result in results:
+    print(result)
            # print(valid_ips)
-with open("c.txt", 'a', encoding='utf-8') as file:
-    for result in results:
+#with open("c.txt", 'a', encoding='utf-8') as file:
+  #  for result in results:
         
   #  for url in urls:
         #for ip_port in ip_ports:
