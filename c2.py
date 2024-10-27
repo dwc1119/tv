@@ -69,8 +69,8 @@ for url in urls:
            # print(f"找到可访问的视频流服务: {valid_ip}")
             valid_ips.append(valid_ip)
             print(valid_ips)
-            with open("c.txt", 'w', encoding='utf-8') as file:
-                file.write(valid_ip + "\n")
+with open("c.txt", 'w', encoding='utf-8') as file:
+    file.write(valid_ip + "\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
