@@ -62,7 +62,7 @@ ip_ports = []
 valid_ips = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
-       # print(ip_ports)
+    print(ip_ports)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
        # for ip_port in ip_ports:
@@ -74,10 +74,10 @@ for url in urls:
              #   file.write(f"{valid_ip}\n")
             
            # print(valid_ips)
-with open("c.txt", 'a', encoding='utf-8') as file:
-    for url in urls:
-        for ip_port in ip_ports:
-            print(ip_port)
+#with open("c.txt", 'a', encoding='utf-8') as file:
+  #  for url in urls:
+        #for ip_port in ip_ports:
+           #print(ip_port)
             #file.write(f"{ip_port}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
