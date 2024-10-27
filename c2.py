@@ -74,7 +74,7 @@ for url in urls:
              #   file.write(f"{valid_ip}\n")
             
            # print(valid_ips)
-with open("c.txt", 'w', encoding='utf-8') as file:
+with open("c.txt", 'a', encoding='utf-8') as file:
     for url in urls:
         for ip_port in ip_ports:
             print(ip_port)
