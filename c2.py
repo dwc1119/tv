@@ -58,7 +58,7 @@ urls_udp = "/udp/239.93.0.184:5140"
 
 # 提取唯一的IP地址和端口号
 
-#ip_ports = []
+ip_ports = []
 valid_ips = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
