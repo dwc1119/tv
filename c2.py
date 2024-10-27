@@ -70,7 +70,7 @@ for url in urls:
            # with open("c.txt", 'w', encoding='utf-8') as file:
              #   file.write(ip_port + "\n")
 
-print(valid_ip)
+print(ip_port)
 
 
 #channels = []
