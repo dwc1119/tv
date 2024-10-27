@@ -72,7 +72,7 @@ for url in urls:
 with open("c.txt", 'w', encoding='utf-8') as file:
     for valid_ip in valid_ips:
         print(valid_ip)
-       # file.write(valid_ip + "\n")
+        file.write(f"{valid_ip}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
