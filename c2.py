@@ -74,11 +74,11 @@ for url in urls:
              #   file.write(f"{valid_ip}\n")
             
            # print(valid_ips)
-#with open("c.txt", 'a', encoding='utf-8') as file:
-for url in urls:
-    for ip_port in ip_ports:
-        print(ip_port)
-        #file.write(f"{ip_port}\n")
+with open("c.txt", 'a', encoding='utf-8') as file:
+    for url in urls:
+        for ip_port in ip_ports:
+            print(ip_port)
+            file.write(f"{ip_port}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
