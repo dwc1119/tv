@@ -1,6 +1,7 @@
 import time
 import requests
 import re
+import os
 import cv2  # 导入OpenCV库
 
 ###urls城市根据自己所处的地理位置修改
