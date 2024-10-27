@@ -65,12 +65,12 @@ for url in urls:
          
         valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
         if valid_ip:
-            print(f"找到可访问的视频流服务: {ip_port}")
+           # print(f"找到可访问的视频流服务: {valid_ip}")
             valid_ips.append(valid_ip)
            # with open("c.txt", 'w', encoding='utf-8') as file:
              #   file.write(ip_port + "\n")
-
-print(ip_port)
+for valid_ip in valid_ips:
+    print(valid_ip)
 
 
 #channels = []
