@@ -60,19 +60,17 @@ ip_ports = []
 valid_ips = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
-    if ip_ports:
-        print(ip_ports)
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
-        for ip_port in ip_ports:
-            valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
-            if valid_ip:
-                print(f"找到可访问的视频流服务: {valid_ip}")
-                valid_ips.append(valid_ip)
-                channels = []
-                with open("iptv3.txt", 'r', encoding='utf-8') as file:
-                    lines = file.readlines()
-                    for line in lines:
-                        print(line)
+    for ip_port in ip_ports:
+        valid_ip = check_video_stream_connectivity(ip_port, urls_udp)
+        if valid_ip:
+            print(f"找到可访问的视频流服务: {valid_ip}")
+            valid_ips.append(valid_ip)
+channels = []
+with open("iptv3.txt", 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line)
        # line = line.strip()
         #if line:
            # channel_name,channel_url = line.split(",")
