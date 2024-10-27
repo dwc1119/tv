@@ -84,7 +84,7 @@ for result in results:
   #  for url in urls:
         #for ip_port in ip_ports:
            #print(ip_port)
-        file.write(result + "\n")
+      #  file.write(result + "\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
