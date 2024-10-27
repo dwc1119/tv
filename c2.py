@@ -68,11 +68,11 @@ for url in urls:
             if valid_ip:
                 print(f"找到可访问的视频流服务: {valid_ip}")
                 valid_ips.append(valid_ip)
-channels = []
-with open("iptv3.txt", 'r', encoding='utf-8') as file:
-    lines = file.readlines()
-    for line in lines:
-        print(line)
+                channels = []
+                with open("iptv3.txt", 'r', encoding='utf-8') as file:
+                lines = file.readlines()
+                for line in lines:
+                print(line)
        # line = line.strip()
         #if line:
            # channel_name,channel_url = line.split(",")
