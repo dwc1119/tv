@@ -61,7 +61,9 @@ urls_udp = "/udp/239.93.0.184:5140"
 ip_ports = []
 valid_ips = []
 for url in urls:
-    ip_ports = extract_unique_ip_ports(url)
+    ports = extract_unique_ip_ports(url)
+    if ports:
+        ip_ports = ports
     print(ip_ports)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
