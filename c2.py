@@ -59,7 +59,7 @@ urls_udp = "/udp/239.93.0.184:5140"
 
 #ip_ports = []
 valid_ips = []
-with open("c.txt", 'a', encoding='utf-8') as file:
+with open("w.txt", 'a', encoding='utf-8') as file:
     for url in urls:
         ip_ports = extract_unique_ip_ports(url)
         file.write(f"{ip_ports}\n")
