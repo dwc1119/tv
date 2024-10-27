@@ -70,9 +70,9 @@ for url in urls:
                 valid_ips.append(valid_ip)
                 channels = []
                 with open("iptv3.txt", 'r', encoding='utf-8') as file:
-                lines = file.readlines()
-                for line in lines:
-                print(line)
+                    lines = file.readlines()
+                    for line in lines:
+                        print(line)
        # line = line.strip()
         #if line:
            # channel_name,channel_url = line.split(",")
