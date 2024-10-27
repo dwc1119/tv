@@ -61,9 +61,7 @@ urls_udp = "/udp/239.93.0.184:5140"
 ip_ports = []
 valid_ips = []
 for url in urls:
-    ports = extract_unique_ip_ports(url)
-    if ports:
-        ip_ports.append(ports)
+    ip_ports = extract_unique_ip_ports(url)
        # print(ip_ports)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
@@ -77,8 +75,9 @@ for url in urls:
             
            # print(valid_ips)
 #with open("c.txt", 'a', encoding='utf-8') as file:
-for ip_port in ip_ports:
-    print(ip_port)
+for url in urls:
+    for ip_port in ip_ports:
+        print(ip_port)
         #file.write(f"{ip_port}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
