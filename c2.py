@@ -9,7 +9,7 @@ urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImNoZW5nZHUi",#成都电信
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9Imxlc2hhbiI%3D",#乐山电信
     #"https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIGNpdHk9ImxhbmdmYW5nIg%3D%3D",
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0i5Zub5bedIg%3D%3D"#四川电信
+   # "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjQxMzQiICYmIHJlZ2lvbj0i5Zub5bedIg%3D%3D"#四川电信
    
 ]
 
@@ -74,10 +74,10 @@ for url in urls:
              #   file.write(f"{valid_ip}\n")
             
            # print(valid_ips)
-#with open("c.txt", 'a', encoding='utf-8') as file:
-  #  for valid_ip in valid_ips:
+with open("c.txt", 'a', encoding='utf-8') as file:
+    for ip_port in ip_ports:
         #print(valid_ip)
-       # file.write(f"{valid_ip}\n")
+        file.write(f"{ip_port}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
