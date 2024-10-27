@@ -60,6 +60,7 @@ urls_udp = "/udp/239.93.0.184:5140"
 
 ip_ports = []
 valid_ips = []
+result = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
     print(ip_ports)
