@@ -6,10 +6,10 @@ with open("iptv.txt", 'r', encoding='utf-8') as file:
         line = line.strip()
         if line:
             channel_name,channel_url = line.split(",")
-            for valid_ip in valid_ips:
+           # for valid_ip in valid_ips:
                 #print(udpxy_url)
-                channel = f"{channel_name},http://{valid_ip}/{channel_url}"
-                channels.append(channel)
+            channel = f"{channel_name},http://{channel_url}"
+            channels.append(channel)
 
 
 result_counter = 10  # 每个频道需要的个数
