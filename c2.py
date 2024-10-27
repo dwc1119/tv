@@ -66,6 +66,7 @@ for url in urls:
     print(ip_ports)
     for ip_port in ip_ports:
         results.append(ip_port)
+        print(result)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
        # for ip_port in ip_ports:
@@ -75,8 +76,8 @@ for url in urls:
            # print(f"找到可访问的视频流服务: {valid_ip}")
                 #valid_ips.append(valid_ip)
              #   file.write(f"{valid_ip}\n")
-for result in results:
-    print(result)
+#for result in results:
+   # print(result)
            # print(valid_ips)
 #with open("c.txt", 'a', encoding='utf-8') as file:
   #  for result in results:
