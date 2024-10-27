@@ -66,7 +66,8 @@ for url in urls:
     print(ip_ports)
     for ip_port in ip_ports:
         results.append(ip_port)
-        print(result)
+        for result in results:
+            print(result)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
        # for ip_port in ip_ports:
