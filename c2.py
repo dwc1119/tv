@@ -78,7 +78,7 @@ with open("c.txt", 'w', encoding='utf-8') as file:
     for url in urls:
         for ip_port in ip_ports:
             print(ip_port)
-            file.write(f"{ip_port}\n")
+            #file.write(f"{ip_port}\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
