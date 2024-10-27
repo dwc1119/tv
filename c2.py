@@ -56,8 +56,8 @@ def check_video_stream_connectivity(ip_port, urls_udp):
 urls_udp = "/udp/239.93.0.184:5140"
 
 # 提取唯一的IP地址和端口号
-ip_ports = []
-valid_ips = []
+
+#ip_ports = []
 for url in urls:
     ip_ports = extract_unique_ip_ports(url)
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
@@ -68,8 +68,8 @@ for url in urls:
            # print(f"找到可访问的视频流服务: {valid_ip}")
             valid_ips.append(valid_ip)
             print(valid_ips)
-            with open("c.txt", 'w', encoding='utf-8') as file:
-                file.write(valid_ip + "\n")
+           # with open("c.txt", 'w', encoding='utf-8') as file:
+                #file.write(valid_ip + "\n")
 #for valid_ip in valid_ips:
     #print(valid_ip)
 
