@@ -68,10 +68,10 @@ with open("c.txt", 'a', encoding='utf-8') as file:
         print(url)
         write(url + "\n"
     
-    for ip_port in ip_ports:
-        results.append(ip_port)
-        for result in results:
-            print(result)
+    #for ip_port in ip_ports:
+       # results.append(ip_port)
+       # for result in results:
+           # print(result)
         #file.write(f"{ip_ports}\n")
         #测试每个IP地址和端口号，直到找到一个可访问的视频流
        # for ip_port in ip_ports:
