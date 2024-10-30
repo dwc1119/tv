@@ -65,6 +65,7 @@ results = []
 with open("c.txt", 'a', encoding='utf-8') as file:
   #  for result in results:
     for url in urls:
+        print(url)
         ip_ports = extract_unique_ip_ports(url)
         print(ip_ports)
         for ip_port in ip_ports:
