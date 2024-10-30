@@ -60,8 +60,8 @@ jobs:
      # - name: Run b
       #  run: python ${{ github.workspace }}/b.py
 
-      - name: Run c2
-        run: python ${{ github.workspace }}/c2.py        
+      - name: Run a1
+        run: python ${{ github.workspace }}/a1.py        
         
         
       - name: 提交更改
