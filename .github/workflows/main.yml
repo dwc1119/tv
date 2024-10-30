@@ -27,10 +27,10 @@ jobs:
           retain_days: 2
           keep_minimum_runs: 6 
 
-      - name: Set up Python 4.8
+      - name: Set up Python 4.7
         uses: actions/setup-python@v5
         with:
-          python-version: 4.8  # 指定Python版本为3.8
+          python-version: 4.7  # 指定Python版本为3.8
 
       - name: Install setuptools
         run: |
