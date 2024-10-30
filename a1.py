@@ -64,6 +64,7 @@ urls_udp = "/rtp/239.254.200.45:8008"
 ip_ports = []
 valid_ips = []
 for url in urls:
+    print(url)
     ip_ports = extract_unique_ip_ports(url)
     if ip_ports:
         print("IP地址和端口号：")
