@@ -2,7 +2,7 @@ name: itvlist
 
 on:
   schedule:
-    - cron: '0 4,10,23 * * *'
+    - cron: '0 23 * * *'
   push:
     branches:
       - main
@@ -41,8 +41,8 @@ jobs:
         run: |
           pip install opencv-python  # 根据需要安装opencv-python
           pip install requests      # 安装requests库
-    #  - name: Run a1
-       # run: python ${{ github.workspace }}/a1.py
+      - name: Run a1
+        run: python ${{ github.workspace }}/a1.py
      
       #- name: Run d
         #run: python ${{ github.workspace }}/d.py
