@@ -1,9 +1,9 @@
 name: itvlist
 
-on:
+#on:
   schedule:
     - cron: '0 23 * * *'
-  push:
+#  push:
     branches:
       - main
 
