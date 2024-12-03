@@ -1,21 +1,74 @@
-{"urls":[
-{"name":"📛公众号丨挺好分享","url":"http://ztha.top/TVBox/thdjk.json"},
-{"name":"🔰公众号丨挺好专享","url":"http://ztha.top/ys.json"},
-{"name":"🔰PG线路丨240923","url":"http://ztha.top/PG/jsm.json"},
-{"name":"🧶挺好丨饭影视","url":"http://饭太硬.com/tv"},
-{"name":"🦗挺好丨讴歌线路","url":"https://xn--zp8-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌zp8"},
-{"name":"🐂挺好丨王二小","url":"http://tvbox.王二小放牛娃.top"},
-{"name":"🌙挺好丨月光宝盒","url":"https://gh.con.sh/https://raw.githubusercontent.com/guot55/yg/main/max.json"},
-{"name":"📛挺好丨OK线路","url":"https://gitee.com/okjack/okk/raw/master/op.txt"},
-{"name":"🍌挺好丨PG线路","url":"https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json"},
-{"name":"🧶挺好丨道长线路","url":"https://pastebin.com/raw/5NHaxyGR"},
-{"name":"☁挺好丨云星影视","url":"http://itvbox.cc/云星日记"},
-{"name":"🦌挺好丨吾爱影视","url":"http://52bsj.vip:98/wuai"},
-{"name":"🦒挺好丨这暴脾气","url":"http://xhww.fun:63/小米/DEMO.json"},
-{"name":"🦒挺好丨荷城茶秀","url":"http://rihou.cc:88/荷城茶秀"},
-{"name":"🐼挺好丨肥猫肥猫","url":"http://我不是.肥猫.love:63/接口禁止贩卖"},
-{"name":"🌨挺好丨高天流云","url":"https://ghproxy.net/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"},
-{"name":"🍃挺好丨吾爱吾爱","url":"http://52bsj.vip:98/wuai"},
-{"name":"💦挺好丨巧技巧技","url":"http://pandown.pro/tvbox/tvbox.json"},
-{"name":"🔞69（暂停使用）","url":"https://git.acwing.com/thgyc/tvbox/-/raw/main/A.txt"}
-]}
+{
+  "tvapp": [],
+  "multipleApi": [
+    {
+      "name": "一木多仓",
+      "url": "https://ghp.ci/https://raw.githubusercontent.com/xianyuyimu/TVBOX-/main/TVBox/%E4%B8%80%E6%9C%A8%E5%A4%9A%E7%BA%BF%E8%B7%AF.json",
+      "time": "2024.11.17"
+    },
+    {
+      "name": "iduoduo",
+      "url": "https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json",
+      "time": "2024.11.30"
+    },
+    {
+      "name": "欧歌多仓",
+      "url": "http://tv.nxog.top/",
+      "time": "2024.12.02"
+    }
+  ],
+  "singleApi": [
+    {
+      "name": "肥猫单仓",
+      "url": "https://play.iptv365.org/肥猫/api.json",
+      "time": "2024.11.23"
+    },
+    {
+      "name": "小马单仓线路",
+      "url": "https://szyyds.cn/tv/x.json",
+      "time": "2024.11.28"
+    },
+    {
+      "name": "1129 4K",
+      "url": "http://xhztv.top/4k.json",
+      "time": "2024.11.29"
+    },
+    {
+      "name": "100km",
+      "url": "https://www.100km.top/0",
+      "time": "2024.11.29"
+    },
+    {
+      "name": "1201单仓",
+      "url": "http://9xi4o.tk/0725.json",
+      "time": "2024.12.01"
+    }
+  ],
+  "liveApi": [
+    {
+      "name": "tvb live",
+      "url": "http://aktv.top/live.m3u",
+      "time": "2024.11.23"
+    },
+    {
+      "name": "hjg live",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
+      "time": "2024.11.25"
+    },
+    {
+      "name": "supprise live",
+      "url": "https://supprise0901.github.io/TVBox_live/live.txt",
+      "time": "2024.11.27"
+    },
+    {
+      "name": "4K live",
+      "url": "https://ghp.ci/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/IPTV.m3u",
+      "time": "2024.11.30"
+    },
+    {
+      "name": "local live",
+      "url": "http://meowtv.top/zb",
+      "time": "2024.12.01"
+    }
+  ]
+}
